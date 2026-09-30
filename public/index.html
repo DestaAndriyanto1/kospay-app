@@ -480,28 +480,64 @@
         height: auto !important;
         position: relative !important;
         top: 0 !important;
-        padding: 16px !important;
-      }
-
-      .brand {
-        margin-bottom: 16px !important;
-      }
-
-      .nav-list {
-        flex-direction: row !important;
-        flex-wrap: wrap !important;
+        padding: 12px 16px !important;
+        display: flex !important;
+        flex-direction: column !important;
         gap: 8px !important;
       }
 
-      .nav-item {
-        flex: 1 1 calc(50% - 8px); 
-        justify-content: center;
-        padding: 8px 10px !important;
-        font-size: 12px !important;
+      .brand {
+        margin-bottom: 0 !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
       }
 
       .user-profile-bottom {
-        margin-top: 16px;
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+        margin-top: 0 !important;
+      }
+
+      .user-info {
+        display: none !important; 
+      }
+
+      .avatar-circle {
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 12px !important;
+      }
+
+      .nav-list {
+        display: flex !important;
+        flex-direction: row !important;
+        overflow-x: auto !important; 
+        white-space: nowrap !important;
+        padding-bottom: 6px !important;
+        gap: 10px !important;
+        -webkit-overflow-scrolling: touch; 
+      }
+
+      .nav-list::-webkit-scrollbar {
+        display: none;
+      }
+      .nav-list {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      .nav-item {
+        flex: 0 0 auto !important; 
+        padding: 8px 16px !important;
+        font-size: 13px !important;
+        border-radius: 20px !important; 
+      }
+
+      .nav-item:hover {
+        transform: none !important;
       }
 
       .main-content {
@@ -509,23 +545,10 @@
         padding: 16px !important;
       }
 
-      .page-title {
-        font-size: 20px !important;
-      }
-
-      .page-subtitle {
-        font-size: 12px !important;
-      }
-
       .stats-grid, 
       .form-grid {
         grid-template-columns: 1fr !important;
         gap: 12px !important;
-      }
-
-      .content-card, 
-      .stat-card {
-        padding: 16px !important;
       }
 
       .btn-primary, 
