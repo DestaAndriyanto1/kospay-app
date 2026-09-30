@@ -470,32 +470,73 @@
     }
 
     @media (max-width: 768px) {
-      body, .container, .wrapper {
+      body {
         flex-direction: column !important;
+        min-height: auto !important;
       }
 
-      .sidebar, nav {
+      .sidebar {
         width: 100% !important;
-        min-width: 100% !important;
-        position: relative !important;
         height: auto !important;
+        position: relative !important;
+        top: 0 !important;
+        padding: 16px !important;
       }
 
-      .main-content, .content {
-        width: 100% !important;
-        padding: 15px !important;
+      .brand {
+        margin-bottom: 16px !important;
       }
 
-      .card {
+      .nav-list {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        gap: 8px !important;
+      }
+
+      .nav-item {
+        flex: 1 1 calc(50% - 8px); 
+        justify-content: center;
+        padding: 8px 10px !important;
+        font-size: 12px !important;
+      }
+
+      .user-profile-bottom {
+        margin-top: 16px;
+      }
+
+      .main-content {
         width: 100% !important;
-        margin-bottom: 15px;
+        padding: 16px !important;
+      }
+
+      .page-title {
+        font-size: 20px !important;
+      }
+
+      .page-subtitle {
+        font-size: 12px !important;
+      }
+
+      .stats-grid, 
+      .form-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+      }
+
+      .content-card, 
+      .stat-card {
+        padding: 16px !important;
+      }
+
+      .btn-primary, 
+      .btn-danger {
+        width: 100% !important;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- SIDEBAR DENGAN PALET COKELAT -->
   <aside class="sidebar">
     <div>
       <div class="brand">
