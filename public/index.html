@@ -469,44 +469,50 @@
       color: var(--border-color);
     }
 
+   /* === RESPONSIVE MOBILE FIX (HEADER & SPACING PERFECTED) === */
    @media (max-width: 768px) {
       body {
         flex-direction: column !important;
         min-height: auto !important;
       }
 
+      /* 1. Container Header/Sidebar Atas dengan jarak ke bawah */
       .sidebar {
         width: 100% !important;
         height: auto !important;
         position: relative !important;
         top: 0 !important;
-        padding: 12px 16px !important;
+        padding: 16px 16px 20px 16px !important; /* Tambah padding bawah */
+        margin-bottom: 12px !important; /* Memberi jarak ke konten di bawahnya */
         display: flex !important;
         flex-direction: column !important;
-        gap: 12px !important;
+        gap: 16px !important;
       }
 
+      /* 2. Mengunci Brand KosPay agar ikon & teks menyatu erat di pojok KIRI */
       .brand {
-        margin-bottom: 0 !important;
-        display: flex !important;
-        justify-content: space-between !important;
+        display: inline-flex !important;
+        justify-content: flex-start !important;
         align-items: center !important;
-        width: 100% !important;
+        gap: 10px !important; /* Jarak antara ikon dompet dan teks KosPay */
+        width: auto !important;
+        margin-bottom: 0 !important;
         font-size: 20px !important;
       }
 
+      /* 3. Avatar DA dikunci di pojok KANAN atas */
       .user-profile-bottom {
         background: transparent !important;
         border: none !important;
         padding: 0 !important;
-        margin-top: 0 !important;
+        margin: 0 !important;
         position: absolute !important;
-        top: 12px !important;
+        top: 16px !important;
         right: 16px !important;
       }
 
       .user-info {
-        display: none !important; 
+        display: none !important; /* Sembunyikan teks nama "Desta Andriyanto" */
       }
 
       .avatar-circle {
@@ -515,13 +521,14 @@
         font-size: 12px !important;
       }
 
+      /* 4. Navigasi Menu Geser dengan jarak yang rapi */
       .nav-list {
         display: flex !important;
         flex-direction: row !important;
         overflow-x: auto !important;
         white-space: nowrap !important;
-        padding-bottom: 4px !important;
-        gap: 8px !important;
+        padding-bottom: 6px !important;
+        gap: 10px !important;
         -webkit-overflow-scrolling: touch;
       }
 
@@ -535,7 +542,7 @@
 
       .nav-item {
         flex: 0 0 auto !important;
-        padding: 8px 14px !important;
+        padding: 8px 16px !important;
         font-size: 13px !important;
         border-radius: 20px !important;
       }
@@ -544,9 +551,10 @@
         transform: none !important;
       }
 
+      /* 5. Penyesuaian Konten Utama */
       .main-content {
         width: 100% !important;
-        padding: 16px !important;
+        padding: 0 16px 24px 16px !important;
       }
 
       .stats-grid, 
