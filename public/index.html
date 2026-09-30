@@ -468,6 +468,29 @@
       margin-bottom: 12px;
       color: var(--border-color);
     }
+
+    @media (max-width: 768px) {
+      body, .container, .wrapper {
+        flex-direction: column !important;
+      }
+
+      .sidebar, nav {
+        width: 100% !important;
+        min-width: 100% !important;
+        position: relative !important;
+        height: auto !important;
+      }
+
+      .main-content, .content {
+        width: 100% !important;
+        padding: 15px !important;
+      }
+
+      .card {
+        width: 100% !important;
+        margin-bottom: 15px;
+      }
+    }
   </style>
 </head>
 <body>
